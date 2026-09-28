@@ -1,0 +1,25 @@
+table,column,description
+sales_daily,date,Calendar date of the sales record
+sales_daily,sku_id,Product identifier
+sales_daily,units_sold,Units sold that day
+sales_daily,revenue,Revenue for that SKU-day
+sales_daily,unit_price,Selling price that day
+sales_daily,promo_flag,"1 if the SKU was on promotion, else 0"
+sku_master,sku_id,Product identifier / primary key
+sku_master,category,Product category
+sku_master,subcategory,Product subcategory
+sku_master,launch_date,Date when the SKU was first sold
+sku_master,unit_cost,Unit cost
+sku_master,list_price,List price
+calendar,date,Calendar date / primary key
+calendar,week,ISO week number
+calendar,month,Month number
+calendar,season,Season
+calendar,is_holiday,Holiday indicator
+calendar,promo_event,Named promotion event
+inventory_snapshots,date,Inventory snapshot date
+inventory_snapshots,sku_id,Product identifier
+inventory_snapshots,on_hand_units,Stock physically available
+inventory_snapshots,on_order_units,Stock ordered but not yet received
+inventory_snapshots,lead_time_days,Replenishment lead time
+inventory_snapshots,reorder_point,Stock level intended to trigger reorder
